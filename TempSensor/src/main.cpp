@@ -1,9 +1,26 @@
-#include <Arduino.h>
+#include <SimpleDHT.h>
+
+int pinDHT11 = 2;
+SimpleDHT11 dht11;
 
 void setup() {
-    // put your setup code here, to run once:
+  Serial.begin(9600);
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
+  Serial.println("=================================");
+  Serial.println("Wynik pomiaru:");
+
+  byte temperature = 0;
+  byte humidity = 0;
+  int err = SimpleDHTErrSuccess;
+  if ((err = dht11.read(pinDHT11, &temperature, &humidity, NULL)) != SimpleDHTErrSuccess) {
+    Serial.print("Read DHT11 failed, err="); Serial.println(err);delay(1000);
+    return;
+  }
+
+  Serial.print("Temperatura(C): ");Serial.println((int)temperature);
+  Serial.print("Wilgotnośc(%): ");Serial.println((int)humidity);
+
+  delay(1500);
 }
