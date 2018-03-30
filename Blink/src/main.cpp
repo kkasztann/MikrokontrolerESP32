@@ -20,7 +20,12 @@ void loop()
      digitalWrite(5, LOW);
      delay(50);
    }
-
+   else if (wyraz=="najszybciej"){
+     digitalWrite(5, HIGH);
+     delay(18);
+     digitalWrite(5, LOW);
+     delay(18);
+   }
   else if (wyraz=="wolno"){
     digitalWrite(5, HIGH);
     delay(1000);
