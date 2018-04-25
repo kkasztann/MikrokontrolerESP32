@@ -1,0 +1,6 @@
+https://thingsboard.io/docs/user-guide/telemetry/
+https://www.google.pl/search?q=esp32+ota&oq=esp32+ota&aqs=chrome..69i57j0.2518j0j7&sourceid=chrome&ie=UTF-8
+https://thingsboard.io/docs/samples/esp8266/temperature/
+https://iot.dev.uek.krakow.pl/devices
+https://github.com/plysiu?tab=repositories
+https://github.com/iothub-pl/esp32
